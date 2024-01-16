@@ -76,4 +76,182 @@ public class Solution {
         System.out.println("Int: " + i);
     }
 }
----------------------------------------
+------------------------------------------------------
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+            
+            System.out.printf("%-15s%03d\n", s1, x);
+            
+            }
+            System.out.println("================================");
+
+    }
+}
+
+
+
+----------------------------------------------------------------------------------
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+ for(int i=1;i<=10;i++){
+     System.out.printf("%d x %d = %d\n",N,i,N*i);
+ }
+        bufferedReader.close();
+    }
+}
+-------------------------------------------------------------------------------------------------------
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            long sum=0;
+            for(int j=0;j<n;j++)
+            {
+                sum =sum+(int)Math.pow(2,j)*b;
+                System.out.print(a + sum+" ");
+            }
+            System.out.print("\n");
+
+            
+             
+            
+        }
+        in.close();
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        for(int i=1;sc.hasNextLine();i++){
+            String s = sc.nextLine();
+            System.out.printf("%d %s\n",i,s);
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+import java.util.*;
+import java.io.*;
+
+
+
+class Solution{
+    public static void main(String []argh)
+    {
+
+
+
+        Scanner sc = new Scanner(System.in);
+        int t=sc.nextInt();
+
+        for(int i=0;i<t;i++)
+        {
+
+            try
+            {
+                long x=sc.nextLong();
+                System.out.println(x+" can be fitted in:");
+                if(x== (byte)x){
+                    System.out.println("* byte");
+                    System.out.println("* short");
+                    System.out.println("* int"); 
+                    System.out.println("* long");
+                }
+                else if(x==(short)x)
+                {
+                    System.out.println("* short");
+                    System.out.println("* int"); 
+                   System.out.println("* long");                   
+                }
+                else if(x==(int)x)
+                {
+                    System.out.println("* int");
+                    System.out.println("* long");
+                }
+                else if(x==(long)x){
+                    System.out.println("* long");
+                }
+                else{
+                    System.out.print("can't be fitted anywhere.");
+                }
+                
+            }
+            catch(Exception e)
+            {
+                System.out.println(sc.next()+" can't be fitted anywhere.");
+            }
+
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+static int B,H;
+static boolean flag=false;
+static{
+    
+    Scanner s=new Scanner(System.in);
+    B=s.nextInt();
+    H=s.nextInt();
+    
+    if(B>0&&H>0)
+        flag=true;
+    else
+        System.out.println("java.lang.Exception: Breadth and height must be positive");
+}
+                        
+
+public static void main(String[] args){
+		if(flag){
+			int area=B*H;
+			System.out.print(area);
+		}
+		
+	}//end of main
+
+}//end of class
+
+----------------------------------------------------------------------------------------------------------------------
